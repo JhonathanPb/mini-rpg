@@ -1,7 +1,19 @@
-bin/Debug/net9.0/mini-rpg.exe
-bin/Debug/net9.0/mini-rpg.dll
-bin/Debug/net9.0/mini-rpg.dll
-bin/Debug/net9.0/mini-rpg.exe
-obj/Debug/net9.0/ref/mini-rpg.dll
-/obj
-bin/Debug/net9.0/mini-rpg.dll
+# Pasta de build e arquivos gerados
+[Dd]ebug/
+[Rr]elease/
+**/bin/
+**/obj/
+
+# Pacotes NuGet
+*.nupkg
+.vs/
+
+# Arquivos de usuário do Visual Studio
+*.suo
+*.user
+
+# Arquivos de cache do Visual Studio Code
+.vscode/
+
+# Arquivos de log e outros
+*.log
