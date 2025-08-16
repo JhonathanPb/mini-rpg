@@ -1,7 +1,19 @@
-# Pastas de build
-in/
-bj/
+# Pasta de build e arquivos gerados
+[Dd]ebug/
+[Rr]elease/
+**/bin/
+**/obj/
 
-# Configuracoes do ambiente de desenvolvimento
+# Pacotes NuGet
+*.nupkg
+.vs/
+
+# Arquivos de usuário do Visual Studio
+*.suo
+*.user
+
+# Arquivos de cache do Visual Studio Code
 .vscode/
 
+# Arquivos de log e outros
+*.log
