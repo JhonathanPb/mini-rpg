@@ -1,7 +1,7 @@
-bin/Debug/net9.0/mini-rpg.exe
-bin/Debug/net9.0/mini-rpg.dll
-bin/Debug/net9.0/mini-rpg.dll
-bin/Debug/net9.0/mini-rpg.exe
-obj/Debug/net9.0/ref/mini-rpg.dll
-/obj
-bin/Debug/net9.0/mini-rpg.dll
+# Pastas de build
+in/
+bj/
+
+# Configuracoes do ambiente de desenvolvimento
+.vscode/
+
