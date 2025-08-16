@@ -1,21 +1,21 @@
 namespace MiniRPG
 {
-    class Heroi
+    public class Heroi
     {
-        public string nome;
-        public string classe;
-        public int vida;
-        public int ataque;
-        public double defesa;
+        public string Nome { get; set; }
+        public string Classe { get; set; }
+        public int Vida { get; set; }
+        public int Ataque { get; set; }
+        public double Defesa { get; set; }
 
         public void ReceberDano(int dano)
         {
-            this.vida -= dano;
+            Vida -= dano;
         }
 
-        public int atacar()
+        public int Atacar()
         {
-            return ataque;
+            return Ataque;
         }    
     }
 }
