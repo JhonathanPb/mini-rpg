@@ -11,9 +11,12 @@ namespace MiniRPG
             // Inicializar os dados do jogo
             DadosDoJogo.CarregadorDados();
             
-            // Exibir o número de heróis e inimigos disponíveis
-            Console.WriteLine($"O numero de Herois disponiveis são: {DadosDoJogo.heroisdisponiveis.Count}");  
-            Console.WriteLine($"O numero de Inimigos disponiveis são: {DadosDoJogo.inimigosdisponiveis.Count}"); 
+            // Menu para exibir o número de heróis e inimigos disponíveis
+            Console.WriteLine("-----SELELCIONE UM HEROI-----")
+            Console.WriteLine()
+            Console.WriteLine(DadosDoJogo.heroisdisponiveis.Nome)
+            break
+
             
         }
 
