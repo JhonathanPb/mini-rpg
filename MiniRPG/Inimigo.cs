@@ -7,6 +7,7 @@ namespace MiniRPG
         public int Vida { get; set; }
         public int Ataque { get; set; }
         public double Defesa { get; set; }
+        public double ChanceDeAparecer { get; set; }
 
         public void ReceberDano(int dano)
         {

@@ -17,16 +17,16 @@ namespace MiniRPG
             heroisdisponiveis.Add(new Heroi { Nome = "Fin", Classe = "Arqueiro", Vida = 80, Ataque = 45, Defesa = 25});
 
             // Inimigos
-            inimigosdisponiveis.Add(new Inimigo { Nome = "Dragão da Alvorada", Classe = "Draconico", Vida = 120, Ataque = 56, Defesa = 75});
-            inimigosdisponiveis.Add(new Inimigo { Nome = "Dragão do Merium", Classe = "Draconico", Vida = 85, Ataque = 65, Defesa = 90});
-            inimigosdisponiveis.Add(new Inimigo { Nome = "Troll da Montanha", Classe = "Troll", Vida = 150, Ataque = 40, Defesa = 75});
-            inimigosdisponiveis.Add(new Inimigo { Nome = "Troll da Caverna", Classe = "Troll", Vida = 150, Ataque = 55, Defesa = 75});
-            inimigosdisponiveis.Add(new Inimigo { Nome = "Cão Maldito", Classe = "Monstro", Vida = 100, Ataque = 25, Defesa = 25});
-            inimigosdisponiveis.Add(new Inimigo { Nome = "Largato do Fogo", Classe = "Monstro", Vida = 80, Ataque = 60, Defesa = 35});
-            inimigosdisponiveis.Add(new Inimigo { Nome = "Morcego", Classe = "Animal", Vida = 60, Ataque = 25, Defesa = 25});
-            inimigosdisponiveis.Add(new Inimigo { Nome = "Aranha", Classe = "Animal", Vida = 60, Ataque = 35, Defesa = 10});
-            inimigosdisponiveis.Add(new Inimigo { Nome = "Cobra", Classe = "Animal", Vida = 70, Ataque = 40, Defesa = 15});
-            inimigosdisponiveis.Add(new Inimigo { Nome = "Lobo", Classe = "Animal", Vida = 75, Ataque = 45, Defesa = 25});
+            inimigosdisponiveis.Add(new Inimigo { Nome = "Dragão da Alvorada", Classe = "Draconico", Vida = 120, Ataque = 56, Defesa = 75, ChanceDeAparecer = 10});
+            inimigosdisponiveis.Add(new Inimigo { Nome = "Dragão do Merium", Classe = "Draconico", Vida = 85, Ataque = 65, Defesa = 90, ChanceDeAparecer = 10});
+            inimigosdisponiveis.Add(new Inimigo { Nome = "Troll da Montanha", Classe = "Troll", Vida = 150, Ataque = 40, Defesa = 75, ChanceDeAparecer = 30});
+            inimigosdisponiveis.Add(new Inimigo { Nome = "Troll da Caverna", Classe = "Troll", Vida = 150, Ataque = 55, Defesa = 75, ChanceDeAparecer = 30});
+            inimigosdisponiveis.Add(new Inimigo { Nome = "Cão Maldito", Classe = "Monstro", Vida = 100, Ataque = 25, Defesa = 25, ChanceDeAparecer = 60});
+            inimigosdisponiveis.Add(new Inimigo { Nome = "Largato do Fogo", Classe = "Monstro", Vida = 80, Ataque = 60, Defesa = 35, ChanceDeAparecer = 60});
+            inimigosdisponiveis.Add(new Inimigo { Nome = "Morcego", Classe = "Animal", Vida = 60, Ataque = 25, Defesa = 25, ChanceDeAparecer = 60});
+            inimigosdisponiveis.Add(new Inimigo { Nome = "Aranha", Classe = "Animal", Vida = 60, Ataque = 35, Defesa = 10, ChanceDeAparecer = 60});
+            inimigosdisponiveis.Add(new Inimigo { Nome = "Cobra", Classe = "Animal", Vida = 70, Ataque = 40, Defesa = 15, ChanceDeAparecer = 60});
+            inimigosdisponiveis.Add(new Inimigo { Nome = "Lobo", Classe = "Animal", Vida = 75, Ataque = 45, Defesa = 25, ChanceDeAparecer = 60});
         }
     }
 }
