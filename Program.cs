@@ -12,7 +12,8 @@ namespace MiniRPG
             // Inicializar os dados do jogo
             DadosDoJogo.CarregadorDados();
 
-            Heroi heroiSelecionado = null;
+            Inimigo? inimigoSelecionado = null;
+            Heroi? heroiSelecionado = null;
             bool escolhaInvalida = true;
 
             while (escolhaInvalida)
@@ -36,7 +37,7 @@ namespace MiniRPG
                     heroiSelecionado = DadosDoJogo.heroisdisponiveis[escolha - 1];
                     Thread.Sleep(4000);
                     Console.Clear();
-                    Console.WriteLine($"Herois Escolhido: {heroiSelecionado.Nome}");
+                    Console.WriteLine($"Herois Escolhido: {heroiSelecionado!.Nome}");
                     escolhaInvalida = false;
                 }
                 else
@@ -48,6 +49,35 @@ namespace MiniRPG
                 }
             
             } 
+
+            // Selecionador de Inimigos (Base em Porcentagem)
+            int sumTotChan = 0;
+
+            foreach (var inimigo in DadosDoJogo.inimigosdisponiveis)
+            {
+                sumTotChan += inimigo.ChanceDeAparecer;
+            }
+
+            Random random = new Random();
+            int numAleatorio = random.Next(sumTotChan);
+            int acumlar = 0;
+
+            foreach (var inimigo in DadosDoJogo.inimigosdisponiveis)
+            {
+                acumlar += inimigo.ChanceDeAparecer;
+
+                if (numAleatorio < acumlar)
+                {
+                    inimigoSelecionado = inimigo;
+                    break;
+                }
+            }
+
+            Console.WriteLine($"\nInimigo: {inimigoSelecionado!.Nome}");
+            Thread.Sleep(4000);
+
+            // Batalha
+        
         
         }
 
