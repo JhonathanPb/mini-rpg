@@ -77,8 +77,7 @@ namespace MiniRPG
             Thread.Sleep(4000);
 
             // Batalha
-        
-        
+
         }
 
     }
